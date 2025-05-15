@@ -10,6 +10,6 @@ import (
 func main() {
 	r := gin.Default()
 	database.ConnectDB()
-	routers.SetupRouters(r)
+	routers.SetupRoutes(r)
 	r.Run(":8080")
 }
